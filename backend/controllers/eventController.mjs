@@ -56,16 +56,38 @@ export const createEvent = async(req,res) =>{
         }; 
 }
 
-// update an event 
+/*
+Given an object with the fields from that of the event model and a valid id 
+the function updates the corresponding fields in the document 
+if the id is not valid an error will be thrown while a status of 4** will be given otherwise 
+an error status will be given and the error code will be returned 
+*/ 
 export const updateEvent = async(req,res) =>{  
-    const id = req.params.id;  
+    const id = req.params.id;   
+    if (!mongoose.Types.ObjectId.isValid(eventId)){
+        return res.status(400).json({mssg: "There is no such event"})
+    } 
     const event  = await Events.findById(params); 
-    if( event ) 
-    return res.json({mssg: "Update route works for id" + id})
+    if(!event){ 
+        return res.status(404).json({mssg: "There is no such event"});
+    } 
+    try { 
+        const updatedEvent = await Events.findByIdAndUpdate({_id:id}, req.body, {new:true}); 
+        return res.status(200).json(updatedEvent);
+    }catch(error){ 
+        return res.status(400).json({error: error})
+    }
     
 }
 
-// delete an event
+
+/* This route deletes and returns the event identified by the id in the parameters including all its information, 
+otherwise returns an error message and status 4**
+Method: Delete
+Path: "api/events/:id" 
+Returns: Status 200 and the event with id id 
+or Status 4** and error code/description. 
+*/
 export const deleteEvent = async(req,res) =>{ 
     const eventId = req.params.id;  
     if (!mongoose.Types.ObjectId.isValid(eventId)){
@@ -79,10 +101,9 @@ export const deleteEvent = async(req,res) =>{
         } 
         await Events.findByIdAndDelete(eventId);
 
-        return res.json(200).json(event);
+        return res.status(200).json(event);
     } catch (error) {
         console.log(error); 
          return res.json(400).json({error: error})
     }
 }
-
