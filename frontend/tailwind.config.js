@@ -15,7 +15,8 @@ module.exports = {
         'body': ['Montserrat'],
     }, 
     backgroundImage: {
-      'des1': "url('/public/assets/Design1.jpg')",
+      'des1': "url('/public/assets/Design1.jpg')", 
+      'des2': "url('/public/assets/Design2.jpg')",
     },
   }, 
 },

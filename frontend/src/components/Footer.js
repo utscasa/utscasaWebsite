@@ -3,8 +3,9 @@ import React from 'react';
 
 export default function Footer() {
     return (
-      <footer className="bg-[#8B4513] text-white py-6 flex flex-col justify-center items-center">
-        <div className="container mx-auto px-4"> 
+      <footer className="bg-[#8B4513] text-white max-w-screen py-6 px-[5vw]"> 
+        <div className="flex flex-col justify-center items-center w-full">  
+          {/* Social Media Icons */}
         <div className="flex flex-row justify-center items-centerpace-x-4 w-[40vw]"> 
             <div className='px-2'><a href="#" className="text-white px-2 hover:text-yellow-500 transition-colors duration-300">
                 <FaFacebookF size={24} />
@@ -24,8 +25,9 @@ export default function Footer() {
                
                 
         </div>
-          {/* Top Section */}
-          <div className="flex flex-col md:flex-row items-center justify-between">
+
+          {/* middle Stuff including icons other page links and   contact us  */}
+          <div className="flex flex-col md:flex-row items-center justify-between w-full">
             {/* Logo */}
             <img src='ASALOGO.png' alt="ASA Logo"className=" rounded-full h-16 w-16"/>
   
@@ -40,24 +42,24 @@ export default function Footer() {
 
   
             {/* Contact Button */}
-            <button className="bg-yellow-600 text-black py-2 px-6 rounded-full hover:bg-yellow-700 mt-4 md:mt-0">
+            <button className="bg-yellow-600 text-white py-2 px-6 rounded-full hover:bg-yellow-700 mt-4 md:mt-0">
               Contact Us
             </button>
           </div>
   
           {/* Divider */}
-          <div className="border-t border-yellow-500 my-4"></div>
+          <div className="border-t w-full border-yellow-500 my-4"></div>
   
-          {/* Bottom Section */}
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            {/* Social Media Icons */}
+          {/* All rights reserved */}
+          <div className="w-full">
            
   
             {/* Copyright */}
-            <p className="text-sm mt-4 md:mt-0">
+            <p className="text-sm flex flex-row justify-center item-center mt-4 md:mt-0">
               © 2024 All Rights Reserved
             </p>
-          </div>
+          </div> 
+          
         </div>
       </footer>
     );
