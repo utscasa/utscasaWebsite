@@ -5,19 +5,19 @@ function HomePage() {
       <div className="App">  
       {/* This is the section for the landing page */}
         <div className="w-full h-screen flex flex-col items-center justify-center"> 
-          <p className="font-bold text-black text-4xl">African Student Association</p>
+          <h1 className="font-bold text-black text-4xl">African Student Association</h1>
           <div className="bg-[#D9D9D9] w-full h-[50vh]"></div>
         </div>  
       {/* This is the section for the upcoming events */} 
       <div className="w-full h-screen flex flex-col items-center justify-center">
-        <p className="font-bold text-highlight text-4xl lg:pb-6" >Upcoming Events</p> 
+        <h2 className="font-bold text-highlight text-4xl lg:pb-6" >Upcoming Events</h2> 
         <div className="bg-[#D9D9D9] w-[60vw] h-[50vh] rounded-lg"></div>
       </div>
       {/* This is the section for the news letter */}  
       <div className="w-full h-screen bg-des1 bg-cover bg-no-repeat bg-center flex flex-col items-center justify-center overflow-hidden"> 
         <div className="bg-white w-[80vw] h-[80vh] rounded-lg flex flex-col items-center justify-start">
         <div className=" pt-6 pb-4 md:pt-10 md:pb-6 lg:pt-16 lg:pb-12 "> 
-          <p className="text-highlight  text-2xl md:text-4xl lg:text-6xl font-semibold">Join Our News Letter!</p>
+          <h2 className="text-highlight  text-2xl md:text-4xl lg:text-6xl font-semibold">Join Our News Letter!</h2>
         </div> 
         <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between w-full p-4 lg:px-20 md:px-16">
           <div>
