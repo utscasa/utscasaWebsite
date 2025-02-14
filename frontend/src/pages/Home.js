@@ -6,12 +6,14 @@ function HomePage() {
       {/* This is the section for the landing page */}
         <div className="w-full h-screen flex flex-col items-center justify-center"> 
           <h1 className="font-bold text-black text-4xl">African Student Association</h1>
-          <div className="bg-[#D9D9D9] w-full h-[50vh]"></div>
+          <div className="w-full sm:w-[50vw] h-[50vh] ">
+            <img alt="ASA Group Pic" src="assets/webresources/paint&sip.jpg" className=" w-full max-h-[50vh]"/>
+          </div>
         </div>  
       {/* This is the section for the upcoming events */} 
       <div className="w-full h-screen flex flex-col items-center justify-center">
         <h2 className="font-bold text-highlight text-4xl lg:pb-6" >Upcoming Events</h2> 
-        <div className="bg-[#D9D9D9] w-[60vw] h-[50vh] rounded-lg"></div>
+        <div className="bg-[#D9D9D9] w-[80vw] md:w-[60vw] h-[50vh] rounded-lg"></div>
       </div>
       {/* This is the section for the news letter */}  
       <div className="w-full h-screen bg-des1 bg-cover bg-no-repeat bg-center flex flex-col items-center justify-center overflow-hidden"> 
