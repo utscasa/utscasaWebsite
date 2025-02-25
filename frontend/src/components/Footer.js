@@ -1,7 +1,9 @@
 import { FaFacebookF, FaTwitter, FaInstagram, FaTiktok } from 'react-icons/fa'; 
 import React from 'react';
 
-export default function Footer() {
+export default function Footer() { 
+  const now = new Date(); 
+  const year = now.getFullYear();
     return (
       <footer className="bg-[#8B4513] text-white max-w-screen py-6 px-[5vw]"> 
         <div className="flex flex-col justify-center items-center w-full">  
@@ -56,7 +58,7 @@ export default function Footer() {
   
             {/* Copyright */}
             <p className="text-sm flex flex-row justify-center item-center mt-4 md:mt-0">
-              © 2024 All Rights Reserved
+              © {year} All Rights Reserved
             </p>
           </div> 
           

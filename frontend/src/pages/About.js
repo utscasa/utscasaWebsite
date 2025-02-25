@@ -1,4 +1,5 @@
 export default function AboutPage() { 
+  
 
     return (
         <div className="w-full min-h-screen flex flex-col items-center justify-start pb-8 "> 
@@ -9,9 +10,9 @@ export default function AboutPage() {
             </div>
 
           {/* Tier one */}
-          <div className="flex flex-col md:flex-row justify-center items-center pt-[10vh]"> 
-            <div className="w-[80%] md:w-[35%] bg-placeholder h-full rounded-lg mb-8 md:mb-0">
-              <img alt="ASA community" src="assets/webresources/paint&sip.jpg"/> 
+          <div className="flex flex-col md:flex-row justify-center items-center pt-[10vh] "> 
+            <div className="w-[80%] md:w-[35%] bg-placeholder h-full mb-8 md:mb-0">
+              <img alt="ASA community" src="assets/webresources/paint&sip.jpg" className="rounded-lg max-h-102"/> 
               </div> 
             <div className="w-[80%] md:w-[35%] pl-4 font-medium"><p>
                 The African Students' Association (ASA) is a 
@@ -31,13 +32,13 @@ export default function AboutPage() {
             social gatherings, all designed to create a supportive and engaging community.
                 </p></div> 
             <div className="w-[80%] md:w-[35%] bg-placeholder h-full rounded-lg">
-            <img className="max-h-102" alt="ASA workshop" src="assets/webresources/workshop.PNG"/> 
+            <img className="max-h-102 rounded-lg" alt="ASA workshop" src="assets/webresources/workshop.PNG"/> 
             </div>
             </div> 
             {/* Tier three */}
           <div className="flex flex-col md:flex-row justify-center items-center pt-[10vh]">   
             <div className="w-[80%] md:w-[35%] bg-placeholder h-full rounded-lg">
-            <img alt="ASA workshop" src="assets/webresources/stressworkshop.PNG"/> 
+            <img  className="rounded-lg max-h-102" alt="ASA workshop" src="assets/webresources/stressworkshop.PNG"/> 
             </div> 
             <div className="w-[80%] md:w-[35%] pl-4 font-medium"><p> ASA is deeply committed to advoc
                 acy and the promotion of social justice, working to ensure that the 

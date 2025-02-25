@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#863E15] text-body pt-2 px-4 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#863E15] text-body pt-2 px-4 flex items-center justify-between">
       {/* Hamburger menu for small screens */}
       <div className="sm:hidden">
         <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
