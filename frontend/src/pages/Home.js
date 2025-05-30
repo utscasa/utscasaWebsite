@@ -3,6 +3,7 @@ import { FaCalendarDay } from "react-icons/fa";
 import { HiAcademicCap } from "react-icons/hi2"; 
 import { HiOutlineGlobeEuropeAfrica } from "react-icons/hi2"; 
 import { FaInstagram } from "react-icons/fa6";
+import { BecomeMemberSection, EventsPreviewSection, NewsLetterSection } from "../sections";
 
 function HomePage() {
     return (
@@ -30,7 +31,7 @@ function HomePage() {
       </div>
         </section>  
       {/* This is the section for the who we are section */} 
-      <section className="w-full min-h-screen flex flex-col items-center justify-center text-bgcol mb-8">
+      <section className="w-full min-h-[75vh] flex flex-col items-center justify-center text-bgcol mb-8">
         <div className="w-full flex flex-col items-center justify-center px-4 md:py-8 mb-4 md:mb-0">
           <h2 className="text-5xl font-semibold py-4 mb-8">Who Are We?</h2>
           <p className="max-w-[80%] text-2xl text-center font-regular">The African Student Association (ASA) is an event-based club dedicated to celebrating 
@@ -64,32 +65,10 @@ function HomePage() {
         </div>
       </section>
       {/* This is the section for the news letter */}  
-      <section className="w-full h-screen bg-des1 bg-cover bg-no-repeat bg-center flex flex-col items-center justify-center overflow-hidden"> 
-        <div className="bg-white w-[80vw] min-h-[80vh] rounded-lg flex flex-col items-center justify-start">
-        <div className=" pt-6 pb-4 md:pt-10 md:pb-6 lg:pt-16 lg:pb-12 "> 
-          <h2 className="text-highlight  text-2xl md:text-4xl lg:text-6xl font-semibold">Join Our News Letter!</h2>
-        </div> 
-        <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between w-full p-4 lg:px-20 md:px-16">
-          <div>
-            <img className="w-28 h-28 mb-8" src="ASALOGO.png" alt="ASA Logo"/> 
-            <div> 
-              <h3   className="text-highlight text-xl font-medium mb-2"> Stay in the Loop with ASA! </h3> 
-              <p className="md:w-[50%] w-[80%] font-medium text-sm mb-4 md:mb-0">Want to be the first to know about exciting upcoming events? Missed an event and need a 
-                quick recap? The ASA newsletter has you covered! Stay connected, relive the best moments, 
-                and be part of our vibrant community every month. Don't miss out—subscribe today and stay engaged with all things ASA!</p>
-            </div>
-            </div> 
-          <div className=' w-[80%] md:w-[60%]'>  
-            <p className=' font-normal text-md pb-2 mb-3'>Enter your info below</p>
-            <form className="flex flex-col ">  
-            <input className="bg-placeholder rounded-md lg:p-3 mb-3 md:p-2 " type="text" placeholder="Name" /> 
-              <input className="bg-placeholder rounded-md lg:p-3 mb-5 md:p-2" type="text" placeholder="Email" /> 
-              <button className="bg-highlight font-medium w-full rounded-lg py-1">Subscribe</button>
-            </form>
-          </div>
-        </div>
-      </div>
-        </section>  
+      
+      <NewsLetterSection/> 
+      <EventsPreviewSection/>
+      <BecomeMemberSection/>
 
       </main>
     );

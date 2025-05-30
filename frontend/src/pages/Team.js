@@ -1,5 +1,5 @@
 import MemberCard from "../components/MemberCard" 
-import { MemberInfo } from "../MemberDictionary"
+import { MemberInfo } from "../data/MemberDictionary"
 export default function TeamPage() {
     return( 
         <div className="flex flex-col min-h-screen"> 

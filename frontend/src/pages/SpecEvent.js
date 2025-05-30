@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { eventsInfo } from "../EventsDictionary";
+import { eventsInfo } from "../data/EventsDictionary";
 function SpecEvent() {
   const { eventId } = useParams(); // Extract the 'username' parameter
 // What I am gonna do is that on loading the page I will extract the name of the event from the URL 

@@ -1,5 +1,5 @@
 import EventCard from "../components/EventCard"; 
-import { eventsInfo } from "../EventsDictionary";
+import { eventsInfo } from "../data/EventsDictionary";
 export default function EventPage() {  
     const today = new Date();
     today.setHours(0, 0, 0, 0); // Reset time to midnight
