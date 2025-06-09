@@ -9,7 +9,7 @@ function HomePage() {
     return (
       <main className="App">  
       {/* This is the section for the landing page */}
-        <section className=" relative w-full min-h-screen md:h-screen bg-landing bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center">  
+        <section className=" relative w-full min-h-screen md:h-screen bg-landing bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center ">  
           <div className="absolute inset-0 bg-black opacity-60"></div>
           <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-highligth-lighter px-4">
         <h1 className="text-5xl font-semibold font-[Montserrat]">
