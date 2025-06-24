@@ -31,7 +31,7 @@ export default function Footer() {
           {/* middle Stuff including icons other page links and   contact us  */}
           <div className="flex flex-col md:flex-row items-center justify-between w-full">
             {/* Logo */}
-            <img src='ASALOGO.png' alt="ASA Logo"className=" rounded-full h-16 w-16"/>
+            <img src='assets/ASALOGO.png' alt="ASA Logo"className=" rounded-full h-16 w-16"/>
   
             {/* Navigation Links */}
             <div className="flex space-x-8 mt-4 md:mt-0">

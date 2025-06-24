@@ -61,7 +61,7 @@ const Navbar = () => {
       
       {/* Logo with link to home */}
       <Link to="/">
-        <img src='ASALOGO.png' alt='ASA Logo' className='h-16 w-16' />
+        <img src='assets/ASALOGO.png' alt='ASA Logo' className='h-16 w-16' />
       </Link>
     </nav>
   );
