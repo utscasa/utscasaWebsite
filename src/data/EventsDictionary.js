@@ -1,3 +1,14 @@
+
+
+/**
+ * @typedef {Object} EventInfoType
+ * @property {number} id
+ * @property {string} title
+ * @property {string} description
+ * @property {string} time
+ * @property {string} location
+ * @property {string?} image
+ */
 export const eventsInfo = [
     {
         id: 1,
@@ -17,14 +28,5 @@ export const eventsInfo = [
         location: "Location 2",
         image: "default",        
     },   
-    { 
-        id: 3,
-        title: "Past Event ",
-        description: "This is a past event",
-        date: "2023-06-11",
-        time: "12:00",
-        location: "Location 2",
-        image: "default",        
-    },
 
 ];
